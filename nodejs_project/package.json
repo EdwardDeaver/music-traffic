@@ -1,0 +1,14 @@
+{
+  "name": "nodejs_project",
+  "module": "receive_node.js",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.4"
+  }
+}
