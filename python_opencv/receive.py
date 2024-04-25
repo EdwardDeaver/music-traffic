@@ -14,9 +14,14 @@ if available_ports:
     midiout.open_port(0)
 
 
+import binascii
+import midioutwrapper as midioutwrapper
+
 
 
 async def handler(websocket):
+
+
     number = 0
     while True:
         if(number>127):
@@ -44,4 +49,12 @@ if __name__ == '__main__':
     # test1.py executed as script
     # do something
     asyncio.run(main())
+
+
+
+########################################
+# FROM :    ''' try:
+#  mout, name = midioutwrapper.open_midioutput(port=0, interactive=False)
+#    except Exception as e:
+#       print(e)
 
